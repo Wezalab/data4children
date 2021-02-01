@@ -25,12 +25,6 @@ class Welcome extends Component {
     showTerms: false
   };
 
-  handleWelcome() {
-    const { navigation } = this.props;
-
-    navigation.navigate("Login");
-  }
-
   renderTermsService() {
     return (
       <Modal
@@ -242,7 +236,7 @@ class Welcome extends Component {
             Data for Children
           </Text>
           <Text h4 style={{ marginTop: theme.sizes.padding / 2 }}>
-          Rendre les données des enfants et des femmes plus accessibles.
+            Rendre les données des enfants et des femmes plus accessibles.
           </Text>
         </Block>
         <Block center middle style={ styles.mt_5} >
@@ -251,9 +245,9 @@ class Welcome extends Component {
         </Block>
         <Block middle flex={0.5} margin={[0, theme.sizes.padding * 2]}>
           <Button gradient 
-           onPress={() => this.handleWelcome()}>
+           onPress={() => navigation.navigate("Browse") }>
             <Text center semibold white>
-            Lancez-vous
+              Lancez-vous
             </Text>
           </Button>
           
@@ -286,11 +280,11 @@ class Welcome extends Component {
 
 Welcome.defaultProps = {
   illustrations: [
-    { id: 1, source: require("../assets/images/"),
+    { id: 1, source: require("../assets/undraw_4.png"),
       msg: "" },
-    { id: 2, source: require("../assets/images/"), 
+    { id: 2, source: require("../assets/undraw_1.png"), 
       msg: "" },
-    { id: 3, source: require("../assets/images/"), 
+    { id: 3, source: require("../assets/undraw_1.png"), 
       msg: "" }]
 };
 
