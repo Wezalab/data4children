@@ -108,7 +108,8 @@ class Welcome extends Component {
             </Text>
           </Button>
           
-          <Button>
+          <Button
+           onPress={() => navigation.navigate("Compte") }>
             <Text center caption gray>
               Creer un compte
             </Text>

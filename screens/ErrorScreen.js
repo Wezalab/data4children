@@ -56,7 +56,7 @@ class ErrorScreen extends Component {
         <Image
             source={require("../assets/undraw_5.png")}
             resizeMode="stretch"
-            style={{overflow: "hidden" }}
+            style={{overflow: "hidden", width: width, height:width/1.5 }}
           />
         </Block>
         <Block middle flex={0.5} margin={[0, theme.sizes.padding * 2]}>
