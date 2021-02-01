@@ -6,7 +6,7 @@ import Constants from 'expo-constants';
 
 const { width, height } = Dimensions.get("window");
 
-function MizikoStatusBar({backgroundColor, ...props}){
+function MyStatusBar({backgroundColor, ...props}){
   return(
     <View style={{backgroundColor, height: Constants.statusBarHeight}}>
       <StatusBar translucent backgroundColor={backgroundColor} {...props} />
@@ -46,7 +46,7 @@ export default class Browse extends React.Component {
     //making a view to show to while loading the webpage
     return (
       <ActivityIndicator
-        color="#009688"
+        color="#00B0FF"
         size="large"
         style={styles.ActivityIndicatorStyle}
       />
@@ -55,11 +55,11 @@ export default class Browse extends React.Component {
   render() {
     return (
       <View style={{flex:1}}>
-        <MizikoStatusBar backgroundColor="purple" barStyle='light-content' />
+        <MyStatusBar backgroundColor="#00B0FF" barStyle='light-content' />
         <WebView
           style={styles.WebViewStyle}
           //Loading URL
-          source={{ uri: 'http://www.data4children.uzishapos.com/' }}
+          source={{ uri: 'https://www.data4children.uzishapos.com/' }}
           //Enable Javascript support
           javaScriptEnabled={true}
           //For the Cache
@@ -86,7 +86,7 @@ export default class Browse extends React.Component {
     // justifyContent: 'flex-start',
     width: width,
     height: height+50,
-    backgroundColor: '#640096',
+    backgroundColor: '#FFFFFF',
     position: 'absolute',
     display: 'flex',
     alignItems: 'center',

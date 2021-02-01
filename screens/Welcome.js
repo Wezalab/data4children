@@ -149,6 +149,7 @@ class Welcome extends Component {
 
           <Block middle padding={[theme.sizes.base / 2, 0]}>
             <Button
+              gradient
               onPress={() => this.setState({ showTerms: false })}
             >
               <Text center white>
@@ -232,10 +233,10 @@ class Welcome extends Component {
       <Block>
         <Block center bottom flex={0.4}>
           <Text h2 center bold>
-            Data for Children
+            DATA FOR CHILDREN
           </Text>
-          <Text h4 style={{ marginTop: theme.sizes.padding / 2 }}>
-            Rendre les données des enfants et des femmes plus accessibles.
+          <Text center h4 gray style={{ margin: theme.sizes.padding }}>
+          Accès aux données statistiques sur La situation des enfants et des femmes en RDC pour les professionnels, étudiants, chercheurs et publics en général
           </Text>
         </Block>
         <Block center middle style={ styles.mt_5} >
@@ -243,7 +244,7 @@ class Welcome extends Component {
           {this.renderSteps()}
         </Block>
         <Block middle flex={0.5} margin={[0, theme.sizes.padding * 2]}>
-          <Button 
+          <Button gradient 
            onPress={() => navigation.navigate("Browse") }>
             <Text center semibold white>
               Lancez-vous
@@ -282,7 +283,7 @@ Welcome.defaultProps = {
       msg: "Rendre les données relatives à la situation des enfants et des femmes plus accessibles aux utilisateurs." },
     { id: 2, source: require("../assets/undraw_1.png"), 
       msg: "Générer des éléments d'analyse personnalisés tels que des graphiques, des diagrammes, des tableaux et des cartes." },
-    { id: 3, source: require("../assets/undraw_1.png"), 
+    { id: 3, source: require("../assets/undraw_2.png"), 
       msg: "Assurer l'archivage permanent de tous les documents." }]
 };
 
