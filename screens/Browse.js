@@ -82,8 +82,6 @@ export default class Browse extends React.Component {
     flex: 1
   },
   ActivityIndicatorStyle: {
-    // flex: 1,
-    // justifyContent: 'flex-start',
     width: width,
     height: height+50,
     backgroundColor: '#FFFFFF',
@@ -93,4 +91,4 @@ export default class Browse extends React.Component {
     justifyContent: 'center',
     zIndex: 20   
   },
-  });
+});
