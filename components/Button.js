@@ -62,7 +62,7 @@ class Button extends Component {
 
 Button.defaultProps = {
   startColor: theme.colors.primary,
-  endColor: theme.colors.secondary,
+  endColor: theme.colors.primary,
   start: { x: 0, y: 0 },
   end: { x: 1, y: 1 },
   locations: [0.1, 0.9],

@@ -149,7 +149,6 @@ class Welcome extends Component {
 
           <Block middle padding={[theme.sizes.base / 2, 0]}>
             <Button
-              gradient
               onPress={() => this.setState({ showTerms: false })}
             >
               <Text center white>
@@ -244,7 +243,7 @@ class Welcome extends Component {
           {this.renderSteps()}
         </Block>
         <Block middle flex={0.5} margin={[0, theme.sizes.padding * 2]}>
-          <Button gradient 
+          <Button 
            onPress={() => navigation.navigate("Browse") }>
             <Text center semibold white>
               Lancez-vous
@@ -265,8 +264,7 @@ class Welcome extends Component {
       return (
         <Block >
           <Block  middle style={ styles.m_20} >
-            <Button gradient
-            onPress={() => this.handleWelcome()}>
+            <Button gradient>
               <Text center semibold white>
               Retour
               </Text>

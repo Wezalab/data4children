@@ -9,7 +9,7 @@ import { Block } from "./components";
 
 // import all used images
 const images = [
-  require("./assets/logo.jpg"),
+  require("./assets/logo.png"),
 ];
 
 export default class App extends React.Component {
@@ -46,5 +46,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({});
