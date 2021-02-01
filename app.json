@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Data4children",
+    "slug": "Data4children",
+    "privacy": "public",
+    "sdkVersion": "39.0.0",
+    "android": {
+      "package": "com.sowebgra.d4c",
+      "permissions": [],
+      "versionCode": 1
+    },
+    "platforms": [
+      "android"
+    ],
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#00ACED"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
