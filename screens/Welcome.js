@@ -281,11 +281,11 @@ class Welcome extends Component {
 Welcome.defaultProps = {
   illustrations: [
     { id: 1, source: require("../assets/undraw_4.png"),
-      msg: "" },
+      msg: "Rendre les données relatives à la situation des enfants et des femmes plus accessibles aux utilisateurs." },
     { id: 2, source: require("../assets/undraw_1.png"), 
-      msg: "" },
+      msg: "Générer des éléments d'analyse personnalisés tels que des graphiques, des diagrammes, des tableaux et des cartes." },
     { id: 3, source: require("../assets/undraw_1.png"), 
-      msg: "" }]
+      msg: "Assurer l'archivage permanent de tous les documents." }]
 };
 
 const styles = StyleSheet.create({
